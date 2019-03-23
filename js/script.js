@@ -42,8 +42,16 @@ data=[
 ,"https://www.straitstimes.com/sites/default/files/articles/2016/08/30/38_39523797_-_17_08_2016_-_pakistan-dailylife_.jpg"]
 },
 {
-    name:"Green house gases",
-    info:[],
+    name:"GreenHouse gases",
+    info:{
+        what: "Gases that trap heat in the atmosphere by absorbing infrared radiation are called greenhouse gases. These gases include carbon dioxide, methane, nitrous oxide, fluorinated gases.",
+        where: "",
+        when: "",
+        why: "Carbon dioxide is a problem because it acts as a greenhouse gas. Due to its molecular structure, CO2 absorbs and emits infrared radiation, warming the Earth’s surface and the lower levels of the atmosphere.",
+        who: "",
+        how: ["Drive smart and less.", "Plant a tree.","Use renewable energy.","Use vehicles that uses little to no gas."]
+        
+    },
     image:["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVYvlOIjJmqcRJlR0fvqmqArExmY2GGdUnc5QU3M1ziFX1Pg2q"
 ,"https://www.nationofchange.org/wp-content/uploads/2017/02/congress_greenhouse_gases_73.jpg"]
 },
@@ -57,17 +65,12 @@ data=[
    // info:[],
     //image:[]
 //},
-{
-    name:"Solutions",
-    info:[],
-    image:[]
-},
+//{
+   // name:"Solutions",
+   // info:[],
+    //image:[]
+//}
 
-{
-    name:"About",
-    info:[],
-    image:[]
-}
 ];
 
 var picnum= 0;
@@ -120,19 +123,23 @@ images= pageData.image;
 picnum= 0;
 $(".polute").attr("src", images[picnum])
 placeData(pageData.info);
-
+ //transition: opacity 5s; 
+ $(".databox").css("transition","none")
 $(".databox").css("opacity", 0);
+    
      $('.bottom').click(function(evt){
         $(".databox").css("opacity", 1);
+        $(".databox").css("transition","opacity 5s");
      });    
 }
 
 $(".dropLink").click(function(){
-    
+    $(".drop").slideUp();
     var index=$(this).data("index");
     updatePage(index)
     console.log(index)
-    
+
+
     
     
 });
