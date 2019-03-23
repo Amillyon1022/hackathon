@@ -3,6 +3,7 @@
   color:white;
  text-align:center;
   
+ 
 }
 
 .header{
@@ -26,41 +27,38 @@ padding:20px;
    background-color: black;
 }
 .databox{
-    width: 450px;
+    width: 320px;
     padding: 10px;
-    border: 10px groove;
+    border: 5px solid gray;
     margin: 0;
-    opacity: 0;
-    transition: opacity 5s; 
-    border-color: #A15A08;
 }
 
 .what {
     padding-left: 20px;
-    margin-left: 150px;
+    margin-left: 55px;
     border: hidden;
     font-style: italic;
 }
 .where {
-    margin-left: 165px;
+    margin-left: 25px;
     margin-top: 25px;
 }
 .when{
-    margin-left: 200px;
+    margin-left: 55px;
     margin-top: 25px;
 }
 .why {
-    margin-left: 235px;
+    margin-left: 75px;
     margin-top: 25px;
 }
 .who {
-    margin-left: 270px;
+    margin-left: 95px;
     margin-top: 25px;
 }
 .how {
-    margin-left: 305px;
+    margin-left: 115px;
     margin-top: 25px;
-    width: 320px;
+    width: 1300px;
 }
 
    
@@ -108,15 +106,4 @@ a{
     background-color:white;
     font-family: 'Bitter', serif;
     text-align:center;
-    font-size:200%;
-}
-.dropLink{
-    display: block
-}
-
-.polute{
-    display:block;
-    margin-left: auto;
-    margin-right: auto;
-
 }
